@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_04tekenapp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="538.308" Width="600">
+    <Grid Name="controlGrid" Height="420" VerticalAlignment="top">
+        <Grid Name="mainGrid" Height="334" VerticalAlignment="Top" Margin="10,10,0,0" HorizontalAlignment="Left" Width="572">
+        </Grid>
+
+        <Button Content="Draw line" HorizontalAlignment="Left" Margin="88,452,0,-52" VerticalAlignment="Top" Width="75" Click="btn_drawLineClick"/>
+        <Grid HorizontalAlignment="Left" Height="339" Margin="10,-72,0,0" VerticalAlignment="Top" Width="572"/>
+        <RadioButton x:Name="radioButtonCyan" Content="Cyan" HorizontalAlignment="Left" Margin="19,430,0,-25" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonYellow" Content="Yellow" HorizontalAlignment="Left" Margin="19,450,0,-45" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButtonRed" Content="Red" HorizontalAlignment="Left" Margin="19,470,0,-65" VerticalAlignment="Top"/>
+        <Button x:Name="buttonReset" Content="Reset" HorizontalAlignment="Left" Margin="482,447,0,-67" VerticalAlignment="Top" Width="100" Height="40" Click="btn_reset"/>
+
+        <Button Content="Draw rectangle" HorizontalAlignment="Left" Height="20" Margin="179,452,0,-52" VerticalAlignment="Top" Width="120" Click="btn_rectangle"/>
+        <Button Content="Draw ellipse" HorizontalAlignment="Left" Height="20" Margin="314,452,0,-52" VerticalAlignment="Top" Width="120" Click="btn_ellipse"/>
+        <CheckBox Name="checkBoxThickStroke" Content="thick stroke" HorizontalAlignment="Left" Height="16" Margin="119,430,0,-110" VerticalAlignment="Top" Width="100"/>
     </Grid>
+
 </Window>
