@@ -112,9 +112,35 @@ namespace _04tekenapp
                 {
                     elip.StrokeThickness = 2;
                 }
-                
                 mainGrid.Children.Add(elip);
             }
+        }
+
+        private void btn_triangle(object sender, RoutedEventArgs e)
+        {
+            Polygon triangle = new Polygon();
+            SolidColorBrush YellowBrush = new SolidColorBrush();
+            YellowBrush.Color = Colors.Yellow;
+            SolidColorBrush BlackBrush = new SolidColorBrush();
+            BlackBrush.Color = Colors.Black;
+
+            triangle.Fill = YellowBrush;
+            triangle.Stroke = BlackBrush;
+            triangle.StrokeThickness = 2;
+
+            System.Windows.Point Point1 = new System.Windows.Point(100, 100);
+            System.Windows.Point Point2 = new System.Windows.Point(300, 300);
+            System.Windows.Point Point3 = new System.Windows.Point(500, 100);
+
+            PointCollection polygonPoints = new PointCollection();
+            polygonPoints.Add(Point1);
+            polygonPoints.Add(Point2);
+            polygonPoints.Add(Point3);
+
+            triangle.Points = polygonPoints;
+
+            mainGrid.Children.Add(triangle);
+            
         }
     }
 }

@@ -20,6 +20,7 @@
         <Button Content="Draw rectangle" HorizontalAlignment="Left" Height="20" Margin="179,452,0,-52" VerticalAlignment="Top" Width="120" Click="btn_rectangle"/>
         <Button Content="Draw ellipse" HorizontalAlignment="Left" Height="20" Margin="314,452,0,-52" VerticalAlignment="Top" Width="120" Click="btn_ellipse"/>
         <CheckBox Name="checkBoxThickStroke" Content="thick stroke" HorizontalAlignment="Left" Height="16" Margin="119,430,0,-110" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Draw triangle" HorizontalAlignment="Left" Height="20" Margin="314,477,0,-77" VerticalAlignment="Top" Width="120" Click="btn_triangle"/>
     </Grid>
 
 </Window>
